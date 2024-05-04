@@ -31,9 +31,9 @@ MonoBehaviour:
   adjustWidthMax: 1.73
   adjustHeightMax: 2.05
   reprojectOffset: 1
-  rangeR: 0.322
-  rangeG: 0.402
-  rangeB: 0.374
+  rangeR: 0
+  rangeG: 0
+  rangeB: 0
   AdjustedColor: {r: 1, g: 1, b: 1, a: 0}
   paintBlockMask:
     serializedVersion: 2
@@ -49,5 +49,5 @@ MonoBehaviour:
   Flow: 0.1
   density: 0.4
   normalLimit: 1
-  grassAmountToGenerate: 200000
+  grassAmountToGenerate: 500000
   generationDensity: 0.01

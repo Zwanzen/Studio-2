@@ -181,17 +181,16 @@ void Main(uint id : SV_DispatchThreadID)
     int numBladesPerVertex = min(GRASS_BLADES, max(1, _MaxBladesPerVertex));
     int numSegmentsPerBlade = min(GRASS_SEGMENTS, max(1, _MaxSegmentsPerBlade));;
     
-    // Reduce numSegmentsPerBlade based on distance
-
-    if (distanceFade < 0.95f)
+    // Reduce segments based on distance
+    if (distanceFade < 0.94f)
     {
         numSegmentsPerBlade = 1;
     }
-    else if (distanceFade < 1.0f)
+    else if (distanceFade < 0.97f)
     {
         numSegmentsPerBlade = 2;
     }
-    else if (distanceFade < 1.2f)
+    else if (distanceFade < 1.0f)
     {
         numSegmentsPerBlade = 3;
     }

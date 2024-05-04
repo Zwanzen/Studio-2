@@ -17,7 +17,7 @@ MonoBehaviour:
   grassRandomHeightMin: -3.2584267
   grassRandomHeightMax: -0.082172394
   bladeRadius: 0.135
-  bladeForwardAmount: 1.57
+  bladeForwardAmount: 2
   bladeCurveAmount: 2
   bottomWidth: 0.623
   MinWidth: 0.12865168
@@ -25,7 +25,7 @@ MonoBehaviour:
   MaxWidth: 0.17314601
   MaxHeight: 0.3325843
   windSpeed: 2
-  windStrength: 0.05
+  windStrength: 0.2
   allowedBladesPerVertex: 4
   allowedSegmentsPerBlade: 4
   affectStrength: 1
