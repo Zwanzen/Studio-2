@@ -50,4 +50,4 @@ MonoBehaviour:
   density: 0.4
   normalLimit: 1
   grassAmountToGenerate: 500000
-  generationDensity: 0.01
+  generationDensity: 0.02

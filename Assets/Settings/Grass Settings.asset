@@ -29,10 +29,10 @@ MonoBehaviour:
   allowedBladesPerVertex: 4
   allowedSegmentsPerBlade: 4
   affectStrength: 1
-  topTint: {r: 0.24750803, g: 0.509434, b: 0.2881517, a: 1}
+  topTint: {r: 0.24705882, g: 0.50980395, b: 0.28627452, a: 1}
   bottomTint: {r: 0, g: 0, b: 0, a: 1}
   drawBounds: 0
-  minFadeDistance: 30
+  minFadeDistance: 20
   maxDrawDistance: 300
   cullingTreeDepth: 6
   cuttingParticles: {fileID: 0}
