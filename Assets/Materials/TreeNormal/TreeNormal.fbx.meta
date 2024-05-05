@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: TreeNormal
-    second: {fileID: 2100000, guid: 22af0b09d79a3304890786a8f71a26f1, type: 2}
+    second: {fileID: 2100000, guid: 3b21fa9fb93394d479da883a667bdb10, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
