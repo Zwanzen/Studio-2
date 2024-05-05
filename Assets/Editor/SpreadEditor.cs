@@ -9,12 +9,12 @@ public class SpreadEditor : Editor
     float SminVal = 1;
     float SminLimit = 0.1f;
     float SmaxVal = 1;
-    float SmaxLimit = 4;
+    float SmaxLimit = 10;
 
     float WminVal = 1;
     float WminLimit = 0.1f;
     float WmaxVal = 1;
-    float WmaxLimit = 4;
+    float WmaxLimit = 10;
     public override void OnInspectorGUI()
     {
         SpreadPrefabsAcrossTerrain spread = (SpreadPrefabsAcrossTerrain)target;
