@@ -38,7 +38,7 @@ public class SpreadPrefabsAcrossTerrain : MonoBehaviour
         GameObject group = new GameObject("Group " + (Groups.Count + 1));
         group.transform.parent = transform;
         Groups.Add(group.transform);
-        selectedGroup++;
+        selectedGroup = Groups.Count;
     }
 
     public void RemoveGroup()
