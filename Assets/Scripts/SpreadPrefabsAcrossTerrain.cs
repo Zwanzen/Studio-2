@@ -45,11 +45,15 @@ public class SpreadPrefabsAcrossTerrain : MonoBehaviour
             for (int j = 0; j < clonesPerCol; j++)
             {
                 // Calculate the position of the clone
-                float x = i * spacing - terrainSize.x / 2;
-                float z = j * spacing - terrainSize.z / 2;
+                float x = i * spacing - (terrainSize.x );
+                float z = j * spacing - (terrainSize.z );
+
+                // Adding height to the vector
+                Vector3 pos = new Vector3(x, 0, z);
+                pos = new(pos.x, terrain.SampleHeight(pos), pos.z);
 
                 // Instantiate the prefab at the calculated position
-                GameObject clone = Instantiate(prefab, new Vector3(x, 0, z), Quaternion.identity);
+                GameObject clone = Instantiate(prefab, pos, Quaternion.identity);
 
                 // Set the parent of the clone to the terrain
                 clone.transform.parent = terrain.transform;
