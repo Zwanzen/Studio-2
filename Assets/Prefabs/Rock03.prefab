@@ -115,6 +115,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 70118ed082d1be442894e59b1f34be0a, type: 2}
     - target: {fileID: -927417493729180602, guid: 01cca284e3bdf9946a67c468f922a3f3,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927417493729180602, guid: 01cca284e3bdf9946a67c468f922a3f3,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -166,7 +171,7 @@ PrefabInstance:
     - target: {fileID: 4742473837712756890, guid: 01cca284e3bdf9946a67c468f922a3f3,
         type: 3}
       propertyPath: m_Size
-      value: 10
+      value: 8.142141
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 01cca284e3bdf9946a67c468f922a3f3,
         type: 3}
@@ -182,6 +187,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnimateCrossFading
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 01cca284e3bdf9946a67c468f922a3f3,
+        type: 3}
+      propertyPath: m_LocalReferencePoint.y
+      value: 0.43278217
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 01cca284e3bdf9946a67c468f922a3f3,
         type: 3}
