@@ -1,5 +1,8 @@
+using UnityEditor.TerrainTools;
 using UnityEngine;
+using UnityEditor;
 
+[ExecuteInEditMode]
 public class SpreadPrefabsAcrossTerrain : MonoBehaviour
 {
     // The prefab to be cloned
@@ -11,7 +14,19 @@ public class SpreadPrefabsAcrossTerrain : MonoBehaviour
     // The terrain component
     public Terrain terrain;
 
-    void Start()
+    int spawned = 0;
+
+    public void CleanChildren()
+    {
+        int nbChildren = terrain.transform.childCount;
+
+        for (int i = nbChildren - 1; i >= 0; i--)
+        {
+            DestroyImmediate(terrain.transform.GetChild(i).gameObject);
+        }
+    }
+
+    public void PlaceCopies()
     {
         // Calculate the terrain size
         Vector3 terrainSize = terrain.terrainData.size;
@@ -22,6 +37,8 @@ public class SpreadPrefabsAcrossTerrain : MonoBehaviour
 
         // Calculate the spacing between clones
         float spacing = Mathf.Min(terrainSize.x / clonesPerRow, terrainSize.z / clonesPerCol);
+
+        spawned = 0;
 
         // Spread the clones across the terrain
         for (int i = 0; i < clonesPerRow; i++)
@@ -37,7 +54,9 @@ public class SpreadPrefabsAcrossTerrain : MonoBehaviour
 
                 // Set the parent of the clone to the terrain
                 clone.transform.parent = terrain.transform;
+                spawned++;
             }
         }
+        Debug.Log(spawned);
     }
 }
