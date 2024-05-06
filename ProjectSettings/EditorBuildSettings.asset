@@ -5,10 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Default Scene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
     path: Assets/Scenes/Grass Test.unity
     guid: 76d92a919b2f80d4ebee677843f37742
+  - enabled: 0
+    path: Assets/Scenes/BIGTEST.unity
+    guid: 6debfadee4f32f14ea2cd609da698b9e
+  - enabled: 0
+    path: Assets/Scenes/BIGSC.unity
+    guid: 202e3ce63e5402145afb0b86842a027a
+  - enabled: 0
+    path: Assets/Scenes/BIGSC 2.unity
+    guid: 92fce3a5b56161c489cc5a2171acc53a
+  - enabled: 1
+    path: Assets/Scenes/BIGSC 3.unity
+    guid: 5f77b7f75ce86624aba2397ab50dd148
   m_configObjects: {}
